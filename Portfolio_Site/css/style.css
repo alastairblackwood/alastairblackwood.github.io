@@ -189,7 +189,7 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Source Code Pro", monospace;
   line-height: 1.4;
 }
 
@@ -209,7 +209,7 @@ body {
 
 .showcase:before {
   content: '';
-  background: url("../img/IMG_4655.JPG") no-repeat center center/cover;
+  background: url("../img/software-source-code-layers-program-code-black-background-software-source-code-layers-program-code-black-background-d-137906111.jpeg ") no-repeat center center/cover;
   position: absolute;
   top: 18%;
   left: 0;
@@ -242,6 +242,32 @@ body {
 
 .showcase p {
   font-size: 1.3rem;
+}
+
+.about_image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 20%;
+}
+
+/*
+.firstname {
+    color: #81b214;
+}
+
+.lastname {
+    color: #ff005c;
 }
 
 /*.btn {
@@ -278,6 +304,9 @@ body {
     -webkit-transform: translate(-53 -50%);
             transform: translate(-53 -50%);
   }
+}
+
+@media only screen and (min-width: 300px) {
   .fab {
     padding: 20px;
     font-size: 30px;
@@ -298,14 +327,14 @@ body {
             justify-content: center;
     font-size: 50px;
     padding: 20px 20px;
-    color: #292929;
+    color: #828c87;
     -webkit-transition: .5s;
     transition: .5s;
   }
 }
 
 .fab:hover {
-  color: grey;
+  color: #fff;
   -webkit-transition: .5s;
   transition: .5s;
 }

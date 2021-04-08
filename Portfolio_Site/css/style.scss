@@ -1,4 +1,9 @@
 @import "partials/menu";
+@import "partials/about";
+@import "partials/skills";
+@import "partials/projects";
+@import "partials/blog";
+$font-stack: 'Source Code Pro', monospace;
 
 :root {
     --primary-color: rgba(198, 214, 218, 0.75);
@@ -13,7 +18,7 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: $font-stack;
     line-height: 1.4;
 }
 
@@ -33,7 +38,7 @@ body {
 
 .showcase:before {
     content:'';
-    background: url('../img/IMG_4655.JPG') no-repeat center center/cover;
+    background: url('../img/software-source-code-layers-program-code-black-background-software-source-code-layers-program-code-black-background-d-137906111.jpeg ') no-repeat center center/cover;
     position: absolute;
     top: 18%;
     left: 0;
@@ -58,6 +63,24 @@ body {
 
 .showcase p {
     font-size: 1.3rem;
+
+}
+
+.about_image {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20%;
+}
+
+/*
+.firstname {
+    color: #81b214;
+}
+
+.lastname {
+    color: #ff005c;
 }
 
 /*.btn {
@@ -86,9 +109,10 @@ body {
     top: 85%;
     left: 15%;
     transform: translate(-53 -50%);
+    }
 }
 
-
+@media only screen and (min-width: 300px) {
 .fab {
     padding: 20px;
     font-size: 30px;
@@ -102,13 +126,14 @@ body {
     justify-content: center;
     font-size: 50px;
     padding: 20px 20px;
-    color: #292929;
+    color: #828c87;
     transition: .5s;
     }
 }
 
+
 .fab:hover {
-    color: grey;
+    color: #fff;
     transition: .5s;
 }
 
