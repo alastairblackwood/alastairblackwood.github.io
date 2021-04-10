@@ -14,28 +14,30 @@
     <title>Portfolio</title>
 </head>
 <body>
-    <div class="menu-wrap">
-    <input type="checkbox" class="toggler">
-    <div class="hamburger"><div></div></div>
-    <div class="menu">
-        <div>
-            <div>
-                <ul>
-                    <li><a href="index.html">Home</a><li>
-                    <li><a href="about.html">About</a><li>
-                    <li><a href="skills.html">Skills</a><li>
-                    <li><a href="projects.html">Projects</a><li>
-                    <li><a href="blog.html">Blog</a><li>    
-                </ul>
-            </div>
+    <!-- Top Navigation Menu-->
+    <nav>
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="active">Logo</a>
+    <!-- Navigation links (hidden by default)-->
+    <div id="myLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
         </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
     </div>
-</div>
-
+</nav>
 <header class="showcase">
     <div class="container showcase-inner">
         <h1>alastair_ Blackwood</h1>
         <p>Hi, I'm a full-stack developer in training. Please feel free to get in touch or check out my links below</p>
+        <p>email: alastair.blackwood@icloud.com</p>
     </div>
 </header>
 <div class="social-media">
@@ -54,5 +56,6 @@
 
 </footer>
 
+<script src="javascript/portfolio.js"></script>
 </body>
 </html>
