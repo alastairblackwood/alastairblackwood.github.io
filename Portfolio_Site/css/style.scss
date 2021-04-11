@@ -5,8 +5,7 @@
 $font-stack: 'Source Code Pro', monospace;
 
 :root {
-    --primary-color: rgba(253, 253, 253, 0.75);
-    --overlay-color: rgba(131, 138, 141, 0.85);
+    --primary-color: rgba(255, 255, 255, 0.75);
     --menu-speed: 0.75s;
 }
 
@@ -24,7 +23,7 @@ body {
 /* Style the navigation menu */
 .topnav {
     overflow: hidden;
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     position: relative;
     overflow: hidden;
   }
@@ -38,7 +37,9 @@ body {
   .topnav a {
     float: left;
     display: block;
-    color: white;
+    margin-left: 7%;
+    margin-top: 2%;
+    color: #292929;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -47,91 +48,93 @@ body {
   
   /* Style the hamburger menu */
   .topnav a.icon {
-    background: black;
+    background: rgb(180, 180, 180);
     display: block;
     position: absolute;
-    right: 0;
+    right: 100;
     top: 0;
   }
   
   /* Add a grey background color on mouse-over */
   .topnav a:hover {
-    background-color: #ddd;
+    background-color: rgb(138, 0, 0);
+    transition: .5s;
     color: black;
   }
   
   /* Style the active link (or home/logo) */
   .topnav a.active {
-    background-color: #4CAF50;
+    background-color: #adadad;
     color: white;
   }
 
  /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
     display: none;
+    transition: 1.7s;
   } 
 
+/* Middle section of webpage where primary content is held 
 .container {
     max-width: 960px;
-    margin:auto;
+    margin: auto;
     overflow: hidden;
     padding: 0 3rem;
     color: #292929;
-}
+} */
 
-.showcase {
-    background-color: var(--primary-color);
-    color: #fff;
-    height: 70vh;
-    position: relative;
-}
-
-.showcase:before {
-    content:'';
-    background: url('../img/software-source-code-layers-program-code-black-background-software-source-code-layers-program-code-black-background-d-137906111.jpeg ') no-repeat center center/cover;
-    position: absolute;
-    top: 10%;
-    left: 0;
-    width: 100%;
-    height: 90%;
-    z-index: -1; 
-}
-
-.showcase .showcase-inner {
+/* Main name text */
+.main-logo {
+    font-size: 20px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    text-align: center;
-    height: 100%;
-
+    padding-top: 15px;
+    padding-bottom: 40px;
+    color: #828c87;
 }
 
-.showcase h1 {
-    font-size: 4rem;
-
+.main-logo:hover {
+    color: rgb(138, 0, 0);
+    transition: 0.7s;
 }
 
-.skills {
-    padding-top: 15%;
-    
-}
-
-.showcase p {
-    font-size: 1.3rem;
-    color: #292929;
-    background-color: #fff;
-    z-index: -1;
-    margin-top: 5%;
-
-}
-
-.about_image {
+.main-image {
     display: flex;
-    flex-direction: column-reverse;
     justify-content: center;
-    align-items: flex-start;
-    margin: 20%;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.about-photo {
+    display: flex;
+    justify-content: center;
+    padding-top: 2%;
+}
+
+.about-logo {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.about-logo:hover {
+  color: rgb(138, 0, 0);
+  transition: 0.7s;
+}
+
+.skills-logo {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    padding-top: 2%;
+
+}
+
+.skills-icons {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    padding-top: 10%;
 }
 
 /* Code logos for skills page 
@@ -148,67 +151,22 @@ body {
 }
 */
 
-.html {
-    list-style: none;
-    height: 100px;
-    display: flex;
-    color: #828c87;
-    z-index: -1;
-    transition: .5s;
-}
-    
-    
-.html:hover {
-    color: #fff;
-    transition: .5s;
-
-}
-
-/*
-.firstname {
-    color: #81b214;
-}
-
-.lastname {
-    color: #ff005c;
-}
-
-/*.btn {
-    display: inline-block;
-    border: none;
-    background-color: var(--primary-color);
-    color: #fff;
-    padding: 0.75rem 1.5rem;
-    margin-top: 5rem;
-    text-decoration: none;
-    transition: opacity 1s ease-in;
-}
-
-
-.btn:hover {
-    opacity: 0.7;
-}
-*/
-
 /* Social media buttons with links to profiles */
 
 @media only screen and (min-width: 300px) {
 .social-media {
-    background-color: var(--primary-color);
+    padding-top: 5%;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    top: 85%;
-    left: 15%;
+    align-items: flex-end;
     transform: translate(-53 -50%);
     }
 }
 
 @media only screen and (min-width: 300px) {
 .fab {
-    padding: 20px;
     font-size: 30px;
-    width: 30px;
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
@@ -225,17 +183,18 @@ body {
 
 
 .fab:hover {
-    color: #fff;
+    color: rgb(138, 0, 0);
     transition: .5s;
 }
 
 /* Copyright footer at bottom of page */
 
-@media only screen and (min-width: 300px) {
 .copyright {
-    background-color: var(--primary-color);
+    font-family: $font-stack;
+    background-color: #ffffff;
     display: flex;
     justify-content: center;
-    text-align: center;
-    }
+    width: 100%;
+    padding-bottom: 3%;
+
 }
