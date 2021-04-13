@@ -24,6 +24,11 @@ img {
   display: block;
 }
 
+p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 0 5%;
+}
+
 /* Style the navigation menu */
 .header-nav {
   display: -webkit-box;
@@ -39,12 +44,8 @@ img {
           align-items: center;
   line-height: .5rem;
   overflow: hidden;
-  margin-bottom: 0.5rem;
-  background-color: #cacaca;
-}
-
-.nav-menu {
-  text-transform: none;
+  margin-bottom: 3rem;
+  background-color: #d6d2d2;
 }
 
 /* Style navigation menu */
@@ -77,7 +78,7 @@ img {
 .nav-menu a {
   display: block;
   text-decoration: none;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.3rem;
   padding: 0.5rem;
 }
 
@@ -98,28 +99,6 @@ img {
           transform: scale(0.9);
 }
 
-@media (min-width: 600px) {
-  .header-nav {
-    line-height: 1.5rem;
-  }
-  .nav-menu {
-    width: 100%;
-  }
-  .nav-item {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 0 10%;
-            flex: 1 0 10%;
-  }
-}
-
-/* Middle section of webpage where primary content is held 
-.container {
-    max-width: 960px;
-    margin: auto;
-    overflow: hidden;
-    padding: 0 3rem;
-    color: #292929;
-} */
 /* Main name text */
 .main-logo {
   font-size: 20px;
@@ -138,11 +117,7 @@ img {
   transition: 0.7s;
 }
 
-/*@media screen and (min-width:$phone) {
-  .main-logo {
-   
-  }
-}*/
+/* "Full-stack web developer" sub heading */
 .main-sub {
   font-size: 15px;
   width: 65%;
@@ -162,12 +137,26 @@ img {
   transition: 0.7s;
 }
 
+/* Resume link */
+.download-link {
+  font-style: "Source Code Pro", monospace;
+  font-size: 70%;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 40%;
+  padding-bottom: 2%;
+}
+
+/* Main black and white source code image */
 .main-image {
   max-width: 100%;
   height: auto;
   display: block;
 }
 
+/* Photograph of myself */
 .about-photo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -205,30 +194,153 @@ img {
   padding-top: 2%;
 }
 
-.skills-icons {
+.skills-icons-a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  text-decoration: none;
+  padding-top: 15px 15px;
+}
+
+.skills-icons-b {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  text-decoration: none;
+  padding-top: 10%;
+}
+
+/* Projects Page */
+.projects-logo {
+  font-size: 20px;
+  max-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-decoration: none;
-  padding-top: 10%;
+  padding: 1%;
+  color: #000000;
 }
 
-/* Social media buttons with links to profiles */
-.fab {
-  text-decoration: none;
-  font-size: 30px;
-  padding: 15px 15px;
-  margin-left: 10%;
+.projects-sub {
+  font-family: "Source Code Pro", monospace;
+  font-size: 15px;
+  width: 65%;
+  margin-left: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: #828c87;
 }
 
-.fab:hover {
+.projects-sub:hover {
   color: #8a0000;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.iconoclast {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 2%;
+}
+
+.iconoclast:hover {
+  color: #8a0000;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.agrizzlybear {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 2%;
+}
+
+.agrizzlybear:hover {
+  color: #8a0000;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.emmablackwood {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 2%;
+  margin-left: 5%;
+}
+
+.emmablackwood:hover {
+  color: #8a0000;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+/* Contact Form */
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%;
+  /* Full width */
+  padding: 12px;
+  /* Some padding */
+  border: 1px solid #ccc;
+  /* Gray border */
+  border-radius: 4px;
+  /* Rounded borders */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  /* Add a top margin */
+  margin-bottom: 16px;
+  /* Bottom margin */
+  resize: block;
+  /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #828c87;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #8a0000;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
 }
 
 /* Social media buttons with links to profiles */
@@ -238,10 +350,25 @@ img {
           transform: translate(-53 -50%);
 }
 
+/* Social media buttons with links to profiles */
+.fab {
+  text-decoration: none;
+  font-size: 30px;
+  padding: 8px 8px;
+  margin-left: 15%;
+  color: #828c87;
+}
+
+.fab:hover {
+  color: #8a0000;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
 /* Copyright footer at bottom of page */
 .copyright {
   font-family: "Source Code Pro", monospace;
-  font-size: 15%;
+  font-size: 50%;
   background-color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -254,30 +381,108 @@ img {
           align-items: center;
 }
 
-/*@include sidebar-desktop-setup(#e3e3e3, #1f1f1f); */
 /* @MEDIA SECTION */
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
-  .topnav.responsive {
-    position: relative;
+@media (min-width: 1024px) {
+  .header-nav {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 1rem 0;
+    margin: 2rem auto;
   }
-  .topnav.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
+  .nav-menu {
+    width: auto;
   }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
+  .main-image {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main-logo {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  .main-sub {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0;
+    padding: 0;
+    font-size: 120%;
+  }
+  .download-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-right: 80%;
+  }
+  .social-media {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 15px 15px;
+  }
+  .fab {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 250%;
+  }
+  .copyright {
+    font-family: "Source Code Pro", monospace;
+    font-size: 100%;
   }
 }
 
-/*@media screen and (max-width: 900px) {
-  @include sidebar-desktop-setup(#e3e3e3, #1f1f1f, 300px);
+@media (min-width: 768px) {
+  .header-nav {
+    line-height: 1.5rem;
+  }
+  .nav-menu {
+    width: 100%;
+    font-size: 100%;
+  }
+  .nav-item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 10%;
+            flex: 1 0 10%;
+  }
 }
 
-@media screen and (min-width: 300px) {
-  @include sidebar-desktop-setup(#e3e3e3, #1f1f1f, 250px);
-} */
+@media screen and (min-width: 480px) {
+  .download-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 30%;
+    font-size: 80%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
