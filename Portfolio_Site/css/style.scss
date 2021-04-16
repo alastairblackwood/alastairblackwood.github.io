@@ -32,9 +32,17 @@ img {
   display: block;
 }
 
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
 p {
   font-family: Georgia, 'Times New Roman', Times, serif;
   padding: 0 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Style the navigation menu */
@@ -125,8 +133,15 @@ p {
   font-size: 70%;
   list-style: none;
   display: flex;
-  margin-left: 65%;
+  justify-content: center;
+  align-items: center;
   padding-bottom: 2%;
+  &:hover {
+    color: rgb(138, 0, 0);
+    transition: 0.7s;
+    border-top: none;
+
+  }
 }
 
 /* Main black and white source code image */
@@ -178,7 +193,7 @@ p {
   margin-bottom: 20%;
 }
 
-/* Create two equal columns that sits next to each other */
+/* Skills page - create two equal columns that sits next to each other */
 .column {
   flex: 50%;
   padding: 0 4px;
@@ -208,6 +223,7 @@ p {
   }
 }
 
+/* Band web page */
 .iconoclast {
   display: flex;
   justify-content: center;
@@ -219,6 +235,7 @@ p {
 
 }
 
+/* Music production webpage */
 .agrizzlybear {
   display: flex;
   justify-content: center;
@@ -229,6 +246,7 @@ p {
   }
 }
 
+/* Art webpage */
 .emmablackwood {
   display: flex;
   justify-content: center;
@@ -238,6 +256,43 @@ p {
     color: rgb(138, 0, 0);
     transition: 0.7s;
   }
+}
+
+/* Blog list page */
+.blog-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.blog-list {
+  margin-top: 10%;
+  margin-left: 10%;
+}
+
+.bitcoin {
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+.oracle {
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+.lightning {
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+.eth {
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+.doge {
+  margin-top: 10%;
+  margin-bottom: 5%;
 }
 
 /* Contact Form */
@@ -348,6 +403,35 @@ input[type=submit]:hover {
     margin-right: 80%;
   }
 
+  .skills-logo {
+    padding: 5%;
+  }
+
+
+  .column {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 50px;
+  }
+
+/*
+  .row {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 10px;
+    padding-top: 0;
+  }
+*/
+
+.web-menu {
+  width: auto;
+
+}
+
   .social-media {
     display: flex;
     justify-content: space-evenly;
@@ -401,6 +485,20 @@ input[type=submit]:hover {
     margin-top: 5%;
   }
 
+  .download-link {
+    margin-right: 30%;
+  }
+
+/*
+  .column {
+    
+  
+  }
+
+  .row {
+    
+  }
+*/
   .iconoclast {
     padding-right: 20%;
   }
@@ -408,6 +506,36 @@ input[type=submit]:hover {
   .emmablackwood {
     padding-right: 25%;
     margin-top: 5%;
+  }
+
+  .bitcoin {
+    display: flex;
+    justify-content: center;
+    margin-right: 10%;
+  }
+
+  .oracle {
+    display: flex;
+    justify-content: center;
+    margin-right: 10%;
+  }
+
+  .lightning {
+    display: flex;
+    justify-content: center;
+    margin-right: 10%;
+  }
+
+  .eth {
+    display: flex;
+    justify-content: center;
+    margin-right: 10%;
+  }
+
+  .doge {
+    display: flex;
+    justify-content: center;
+    margin-right: 10%;
   }
 
   .social-media {
