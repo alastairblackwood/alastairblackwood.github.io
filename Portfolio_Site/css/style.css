@@ -33,6 +33,34 @@ h1 {
           justify-content: center;
 }
 
+h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+h4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 10%;
+}
+
 p {
   font-family: Georgia, 'Times New Roman', Times, serif;
   padding: 0 5%;
@@ -98,9 +126,6 @@ p {
   text-decoration: none;
   letter-spacing: 0.3rem;
   padding: 0.5rem;
-}
-
-.nav-menu a {
   color: rgba(109, 107, 107, 0.75);
   -webkit-transition: all ease-in-out 0.5s;
   transition: all ease-in-out 0.5s;
@@ -137,15 +162,6 @@ p {
 
 /* "Full-stack web developer" sub heading */
 .main-sub {
-  font-size: 15px;
-  width: 65%;
-  margin-left: 15%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   color: #828c87;
 }
 
@@ -170,13 +186,6 @@ p {
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 2%;
-}
-
-.download-link:hover {
-  color: #8a0000;
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
-  border-top: none;
 }
 
 /* Main black and white source code image */
@@ -476,6 +485,7 @@ input[type=submit]:hover {
   .nav-menu {
     width: auto;
   }
+  /* main image on home page */
   .main-image {
     width: 100%;
     display: -webkit-box;
@@ -484,6 +494,8 @@ input[type=submit]:hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding: 0;
+    margin-top: 5%;
   }
   .main-logo {
     width: 100%;
@@ -506,7 +518,6 @@ input[type=submit]:hover {
             justify-content: center;
     margin: 0;
     padding: 0;
-    font-size: 120%;
   }
   .download-link {
     display: -webkit-box;
@@ -617,22 +628,8 @@ input[type=submit]:hover {
   .download-link {
     margin-right: 30%;
   }
-  /*
-  .column {
-    
-  
-  }
-
-  .row {
-    
-  }
-*/
-  .iconoclast {
-    padding-right: 20%;
-  }
   .emmablackwood {
-    padding-right: 25%;
-    margin-top: 5%;
+    margin-right: 5%;
   }
   .bitcoin {
     display: -webkit-box;

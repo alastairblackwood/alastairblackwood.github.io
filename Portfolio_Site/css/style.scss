@@ -37,6 +37,22 @@ h1 {
   justify-content: center;
 }
 
+h2 {
+  display: flex;
+  justify-content: center;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+}
+
+h4 {
+  display: flex;
+  justify-content: center;
+  margin-right: 10%;
+}
+
 p {
   font-family: Georgia, 'Times New Roman', Times, serif;
   padding: 0 5%;
@@ -81,16 +97,12 @@ p {
   text-decoration: none;
   letter-spacing: 0.3rem;
   padding: 0.5rem;
-}
-
-.nav-menu a {
   color:rgba(109, 107, 107, 0.75);
   transition: all ease-in-out 0.5s;
-}
-
-.nav-menu a:hover {
-  background-color: rgb(138, 0, 0);
-  transform: scale(1.1);
+  &:hover {
+    background-color: rgb(138, 0, 0);
+    transform: scale(1.1);
+  }
 }
 
 .nav-menu a:active {
@@ -115,11 +127,6 @@ p {
 
 /* "Full-stack web developer" sub heading */
 .main-sub {
-  font-size: 15px;
-  width: 65%;
-  margin-left: 15%;
-  display: flex;
-  justify-content: center;
   color: #828c87;
   &:hover {
   color: rgb(138, 0, 0);
@@ -136,12 +143,6 @@ p {
   justify-content: center;
   align-items: center;
   padding-bottom: 2%;
-  &:hover {
-    color: rgb(138, 0, 0);
-    transition: 0.7s;
-    border-top: none;
-
-  }
 }
 
 /* Main black and white source code image */
@@ -374,10 +375,13 @@ input[type=submit]:hover {
     width: auto;
   }
 
+/* main image on home page */
   .main-image {
     width: 100%;
     display: flex;
     justify-content: center;
+    padding: 0;
+    margin-top: 5%;
   }
 
   .main-logo {
@@ -394,7 +398,6 @@ input[type=submit]:hover {
     justify-content: center;
     margin: 0;
     padding: 0;
-    font-size: 120%;
   }
 
   .download-link {
@@ -489,24 +492,9 @@ input[type=submit]:hover {
     margin-right: 30%;
   }
 
-/*
-  .column {
-    
-  
-  }
-
-  .row {
-    
-  }
-*/
-  .iconoclast {
-    padding-right: 20%;
-  }
-
   .emmablackwood {
-    padding-right: 25%;
-    margin-top: 5%;
-  }
+  margin-right: 5%;
+}
 
   .bitcoin {
     display: flex;
