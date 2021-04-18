@@ -171,7 +171,7 @@ p {
   transition: 0.7s;
 }
 
-/* Resume link */
+/* Resume download button */
 .download-link {
   font-style: "Source Code Pro", monospace;
   font-size: 70%;
