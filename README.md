@@ -4,7 +4,7 @@ Portfolio
 
 Link to published portfolio site..
 
-Link to GitHub repo.. https://github.com/alastairblackwood/alastair-repo.git
+Link to GitHub repo.. https://github.com/alastairblackwood/alastairblackwood.github.io.git
 
 Description:
 
