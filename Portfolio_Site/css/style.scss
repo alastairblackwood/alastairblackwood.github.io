@@ -201,7 +201,6 @@ p {
 
 /* Skills page - create two equal columns that sits next to each other */
 .column {
-  flex: 50%;
   padding: 0 4px;
 }
 
@@ -370,12 +369,14 @@ input[type=submit]:hover {
 /* @MEDIA SECTION */
 
 @media (min-width:$laptop) {
+/* navigation bar */
   .header-nav {
     justify-content: space-between;
     padding: 1rem 0;
     margin: 2rem auto;
   }
 
+/* navigation menu */
   .nav-menu {
     width: auto;
   }
@@ -389,6 +390,7 @@ input[type=submit]:hover {
     margin-top: 5%;
   }
 
+/* main header on home page */
   .main-logo {
     width: 100%;
     display: flex;
@@ -397,6 +399,7 @@ input[type=submit]:hover {
     padding: 0;
   }
 
+/* sub header on home page */
   .main-sub {
     width: 100%;
     display: flex;
@@ -405,47 +408,41 @@ input[type=submit]:hover {
     padding: 0;
   }
 
+/* download link on download page */
   .download-link {
     display: flex;
     justify-content: center;
     margin-right: 80%;
   }
 
+/* fab font images on skills page */
   .skills-logo {
     padding: 5%;
   }
 
-
+/* fab font block on skills page 
   .column {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     max-width: 50px;
-  }
+  }*/
 
-/*
-  .row {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 10px 10px;
-    padding-top: 0;
-  }
-*/
-
-.web-menu {
-  width: auto;
+/* website list on projects page */
+  .web-menu {
+    width: auto;
 
 }
 
+/* social media links */
   .social-media {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding: 15px 15px;
   }
+
   .fab {
     display: flex;
     font-size: 250%;
@@ -459,19 +456,26 @@ input[type=submit]:hover {
 }
 
 @media (min-width:$tablet) {
+/* navigation bar */
   .header-nav {
     line-height: 1.5rem;
     justify-content: space-around;
     padding: 1rem 0;
     margin: 2rem auto;
   }
+
+/* navigation bar menu */
   .nav-menu {
     width: 100%;
     font-size: 100%;
   }
+
+/* navigation bar items */
   .nav-item {
     flex: 1 0 10%;
   }
+
+/* Main header on home page underneath navigation bar */
   .main-logo {
     width: 100%;
     display: flex;
@@ -480,6 +484,7 @@ input[type=submit]:hover {
     padding: 0;
   }
 
+/* Sub header on home page underneath header */
   .main-sub {
     width: 100%;
     display: flex;
@@ -489,46 +494,61 @@ input[type=submit]:hover {
     font-size: 120%;
   }
 
+/* Main image on home page underneath headers */
   .main-image {
     margin-top: 5%;
   }
 
+/* Resume download link on about page */
   .download-link {
     margin-right: 30%;
   }
 
-  .emmablackwood {
-  margin-right: 5%;
+.column {
+  display: block;
+  justify-content: space-between;
+  font-size: 200%;
 }
 
+/* Website link on projects page */
+  .emmablackwood {
+    margin-right: 5%;
+  }
+
+  /* Blog media query CSS */
+
+  .blog-logo {
+    margin: 0;
+    padding: 0;
+  }
+
+  .blog-list {
+    margin-top: 0;
+  }
+
   .bitcoin {
-    display: flex;
-    justify-content: center;
-    margin-right: 10%;
+    float: left;
+    width: 100%;
   }
 
   .oracle {
-    display: flex;
-    justify-content: center;
-    margin-right: 10%;
+    float: left;
+    width: 100%;
   }
 
   .lightning {
-    display: flex;
-    justify-content: center;
-    margin-right: 10%;
+    float: left;
+    width: 100%;
   }
 
   .eth {
-    display: flex;
-    justify-content: center;
-    margin-right: 10%;
+    float: left;
+    width: 100%;
   }
 
   .doge {
-    display: flex;
-    justify-content: center;
-    margin-right: 10%;
+    float: left;
+    width: 100%;
   }
 
   .social-media {
