@@ -53,9 +53,14 @@ h4 {
   margin-right: 10%;
 }
 
+h5 {
+  display: flex;
+  justify-content: center;
+}
+
 p {
   font-family: Georgia, 'Times New Roman', Times, serif;
-  padding: 0 5%;
+  padding: 0 5 5%;
   display: flex;
   justify-content: center;
   align-items: center;
