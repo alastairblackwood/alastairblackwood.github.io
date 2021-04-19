@@ -13,6 +13,7 @@ html {
   line-height: 1.5rem;
   box-sizing: border-box;
   font-family: $font-stack;
+  overflow-x: hidden;
 }
 
 body {
@@ -50,12 +51,13 @@ h3 {
 h4 {
   display: flex;
   justify-content: center;
-  margin-right: 10%;
+  padding: 5%;
 }
 
 h5 {
   display: flex;
   justify-content: center;
+  font-size: 100%;
 }
 
 p {
@@ -150,6 +152,9 @@ p {
   padding-bottom: 2%;
 }
 
+
+
+
 /* Main black and white source code image */
 .main-image {
   max-width: 100%;
@@ -183,25 +188,18 @@ p {
   transition: 0.7s;
 }
 
-.skills-logo {
+/* Skills page */
+.skills {
   display: flex;
   justify-content: center;
-  font-size: 40px;
-  padding-top: 10%;
-}
-
-/* Skills page */
-.row {
-  display: flex;
-  flex-wrap: wrap;
   padding: 0 4px;
-  margin-top: 20%;
-  margin-bottom: 20%;
 }
 
 /* Skills page - create two equal columns that sits next to each other */
-.column {
+.skills-column {
   padding: 0 4px;
+  margin-top: 20%;
+  margin-bottom: 20%;
 }
 
 /* Projects Page */
@@ -217,7 +215,7 @@ p {
 .projects-sub {
   font-family: $font-stack;
   font-size: 15px;
-  width: 65%;
+  width: auto;
   margin-left: 15%;
   display: flex;
   justify-content: center;
@@ -266,7 +264,6 @@ p {
 /* Blog list page */
 .blog-logo {
   display: flex;
-  flex-direction: column;
   justify-content: center;
 }
 
@@ -275,7 +272,26 @@ p {
   margin-left: 10%;
 }
 
+.blog-list img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blog-list h5 {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.blog-list p {
+  text-align: center;
+  border:rgb(214, 210, 210)
+}
+
 .bitcoin {
+  justify-content: center;
+  margin: 10px;
   margin-top: 10%;
   margin-bottom: 5%;
 }
@@ -371,7 +387,7 @@ input[type=submit]:hover {
 @media (min-width:$laptop) {
 /* navigation bar */
   .header-nav {
-    justify-content: space-between;
+    justify-content: center;
     padding: 1rem 0;
     margin: 2rem auto;
   }
@@ -415,24 +431,18 @@ input[type=submit]:hover {
     margin-right: 80%;
   }
 
-/* fab font images on skills page */
-  .skills-logo {
-    padding: 5%;
-  }
-
-/* fab font block on skills page 
-  .column {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    max-width: 50px;
-  }*/
-
 /* website list on projects page */
   .web-menu {
     width: auto;
 
+}
+
+.skills-column i {
+  display: fixed;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 /* social media links */
@@ -504,53 +514,60 @@ input[type=submit]:hover {
     margin-right: 30%;
   }
 
-.column {
-  display: block;
-  justify-content: space-between;
-  font-size: 200%;
-}
+  .skills-logo {
+    margin: 15%;
+  }
+
+/* Skills logos on skills page */ 
+  .skills-column {
+    display: block;
+    justify-content: center;
+    font-size: 150%;
+  }
 
 /* Website link on projects page */
   .emmablackwood {
     margin-right: 5%;
   }
 
-  /* Blog media query CSS */
-
+/* Blog header media query CSS */
   .blog-logo {
     margin: 0;
     padding: 0;
   }
 
+/* Blog list */ 
   .blog-list {
+    justify-content: center;
     margin-top: 0;
   }
 
+/* Bitcoin blog entry */
   .bitcoin {
-    float: left;
-    width: 100%;
+    margin-right: 10%;
   }
 
+/* Blockchain blog entry */
   .oracle {
-    float: left;
-    width: 100%;
+    margin-right: 10%;
   }
 
+/* Lightning blog entry */  
   .lightning {
-    float: left;
-    width: 100%;
+    margin-right: 10%;
   }
 
+/* Ethereum blog entry */  
   .eth {
-    float: left;
-    width: 100%;
+    margin-right: 10%;
   }
 
+/* Doge blog entry */
   .doge {
-    float: left;
-    width: 100%;
+    margin-right: 10%;
   }
 
+/* Social media links */
   .social-media {
     display: flex;
     justify-content: space-evenly;
