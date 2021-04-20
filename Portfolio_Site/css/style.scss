@@ -23,9 +23,14 @@ body {
   max-width: 1400px;
 }
 
-*, *::before, *::after {
-    box-sizing: inherit;
+* {
+  margin: 0;
+  padding: 0;
 }
+
+/* *, *::before, *::after {
+    box-sizing: inherit;
+}*/
 
 img {
   max-width: 100%;
@@ -36,11 +41,13 @@ img {
 h1 {
   display: flex;
   justify-content: center;
+  margin-bottom: 5%;
 }
 
 h2 {
   display: flex;
   justify-content: center;
+  margin-bottom: 5%;
 }
 
 h3 {
@@ -141,7 +148,7 @@ p {
   }
 }
 
-/* Resume download button */
+/* !!!!!!!!!!!!!!!!! **** Resume download button */
 .download-link {
   font-style: $font-stack;
   font-size: 70%;
@@ -152,14 +159,15 @@ p {
   padding-bottom: 2%;
 }
 
-
-
-
 /* Main black and white source code image */
 .main-image {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+/*.social-media i {
+
 }
 
 /* Photograph of myself */
@@ -196,10 +204,10 @@ p {
 }
 
 /* Skills page - create two equal columns that sits next to each other */
-.skills-column {
+.skills-column i {
   padding: 0 4px;
-  margin-top: 20%;
-  margin-bottom: 20%;
+  margin-top: 10%;
+  margin-bottom: 2%;
 }
 
 /* Projects Page */
@@ -403,7 +411,7 @@ input[type=submit]:hover {
     display: flex;
     justify-content: center;
     padding: 0;
-    margin-top: 5%;
+    margin-top: 1%;
   }
 
 /* main header on home page */
@@ -438,11 +446,11 @@ input[type=submit]:hover {
 }
 
 .skills-column i {
-  display: fixed;
-  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   margin: 0;
-  padding: 0;
 }
 
 /* social media links */
@@ -491,7 +499,7 @@ input[type=submit]:hover {
     display: flex;
     justify-content: center;
     margin: 0;
-    padding: 0;
+    padding: 2%;
   }
 
 /* Sub header on home page underneath header */
@@ -504,10 +512,10 @@ input[type=submit]:hover {
     font-size: 120%;
   }
 
-/* Main image on home page underneath headers */
+/* Main image on home page underneath headers 
   .main-image {
-    margin-top: 5%;
-  }
+    margin-top: 1%;
+  } 
 
 /* Resume download link on about page */
   .download-link {
@@ -522,7 +530,9 @@ input[type=submit]:hover {
   .skills-column {
     display: block;
     justify-content: center;
-    font-size: 150%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 100%;
   }
 
 /* Website link on projects page */

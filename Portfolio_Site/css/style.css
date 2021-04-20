@@ -14,11 +14,14 @@ body {
   max-width: 1400px;
 }
 
-*, *::before, *::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+* {
+  margin: 0;
+  padding: 0;
 }
 
+/* *, *::before, *::after {
+    box-sizing: inherit;
+}*/
 img {
   max-width: 100%;
   height: auto;
@@ -32,6 +35,7 @@ h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 5%;
 }
 
 h2 {
@@ -41,6 +45,7 @@ h2 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 5%;
 }
 
 h3 {
@@ -182,7 +187,7 @@ p {
   transition: 0.7s;
 }
 
-/* Resume download button */
+/* !!!!!!!!!!!!!!!!! **** Resume download button */
 .download-link {
   font-style: "Source Code Pro", monospace;
   font-size: 70%;
@@ -204,6 +209,10 @@ p {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+/*.social-media i {
+
 }
 
 /* Photograph of myself */
@@ -253,10 +262,10 @@ p {
 }
 
 /* Skills page - create two equal columns that sits next to each other */
-.skills-column {
+.skills-column i {
   padding: 0 4px;
-  margin-top: 20%;
-  margin-bottom: 20%;
+  margin-top: 10%;
+  margin-bottom: 2%;
 }
 
 /* Projects Page */
@@ -512,7 +521,7 @@ input[type=submit]:hover {
         -ms-flex-pack: center;
             justify-content: center;
     padding: 0;
-    margin-top: 5%;
+    margin-top: 1%;
   }
   /* main header on home page */
   .main-logo {
@@ -553,14 +562,20 @@ input[type=submit]:hover {
     width: auto;
   }
   .skills-column i {
-    display: fixed;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     margin: 0;
-    padding: 0;
   }
   /* social media links */
   .social-media {
@@ -617,7 +632,7 @@ input[type=submit]:hover {
         -ms-flex-pack: center;
             justify-content: center;
     margin: 0;
-    padding: 0;
+    padding: 2%;
   }
   /* Sub header on home page underneath header */
   .main-sub {
@@ -632,11 +647,12 @@ input[type=submit]:hover {
     padding: 0;
     font-size: 120%;
   }
-  /* Main image on home page underneath headers */
+  /* Main image on home page underneath headers 
   .main-image {
-    margin-top: 5%;
-  }
-  /* Resume download link on about page */
+    margin-top: 1%;
+  } 
+
+/* Resume download link on about page */
   .download-link {
     margin-right: 30%;
   }
@@ -649,7 +665,9 @@ input[type=submit]:hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    font-size: 150%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 100%;
   }
   /* Website link on projects page */
   .emmablackwood {
