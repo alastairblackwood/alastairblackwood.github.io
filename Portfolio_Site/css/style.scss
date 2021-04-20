@@ -34,19 +34,19 @@ body {
 
 img {
   max-width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
 }
 
 h1 {
   display: flex;
   justify-content: center;
-  margin-bottom: 5%;
 }
 
 h2 {
   display: flex;
   justify-content: center;
+  margin-top: 3%;;
   margin-bottom: 5%;
 }
 
@@ -64,6 +64,7 @@ h4 {
 h5 {
   display: flex;
   justify-content: center;
+  align-items: center;
   font-size: 100%;
 }
 
@@ -140,7 +141,7 @@ p {
 }
 
 /* "Full-stack web developer" sub heading */
-.main-sub {
+.main-sub h2 {
   color: #828c87;
   &:hover {
   color: rgb(138, 0, 0);
@@ -148,22 +149,13 @@ p {
   }
 }
 
-/* !!!!!!!!!!!!!!!!! **** Resume download button */
-.download-link {
-  font-style: $font-stack;
-  font-size: 70%;
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 2%;
-}
-
 /* Main black and white source code image */
 .main-image {
   max-width: 100%;
   height: auto;
   display: block;
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
 
 /*.social-media i {
@@ -178,11 +170,12 @@ p {
 }
 
 /* About me text beneath photo */
-.about-text {
+.about-text p {
   background-color: rgb(214, 210, 210);
   color: rgba(32, 32, 32, 0.75);
   margin-top: 2%;
-  padding-top: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 
 .about-logo {
@@ -194,6 +187,17 @@ p {
 .about-logo:hover {
   color: rgb(138, 0, 0);
   transition: 0.7s;
+}
+
+/* About Page Resume download button */
+.download-link {
+   font-style: $font-stack;
+   font-size: 70%;
+   list-style: none;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-bottom: 2%;
 }
 
 /* Skills page */
@@ -282,19 +286,17 @@ p {
 
 .blog-list img {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.blog-list h5 {
-  text-align: center;
-  margin: 0;
-  padding: 0;
+  margin-bottom: 5%;
+  margin-right: 10%;
 }
 
 .blog-list p {
   text-align: center;
-  border:rgb(214, 210, 210)
+  border: solid;
+  border-radius: 1px;
+  border-color:rgb(214, 210, 210);
+  background-color: rgb(214, 210, 210);
+  margin-right: 10%;
 }
 
 .bitcoin {
@@ -394,16 +396,23 @@ input[type=submit]:hover {
 
 @media (min-width:$laptop) {
 /* navigation bar */
-  .header-nav {
-    justify-content: center;
-    padding: 1rem 0;
-    margin: 2rem auto;
-  }
+.header-nav {
+  line-height: 1.5rem;
+  justify-content: space-around;
+  padding: 1rem 0;
+  margin: 2rem auto;
+}
 
-/* navigation menu */
-  .nav-menu {
-    width: auto;
-  }
+/* navigation bar menu */
+.nav-menu {
+  width: 100%;
+  font-size: 100%;
+}
+
+/* navigation bar items */
+.nav-item {
+  flex: 1 0 10%;
+}
 
 /* main image on home page */
   .main-image {
@@ -412,6 +421,7 @@ input[type=submit]:hover {
     justify-content: center;
     padding: 0;
     margin-top: 1%;
+    margin-bottom: 3%;
   }
 
 /* main header on home page */
@@ -424,11 +434,11 @@ input[type=submit]:hover {
   }
 
 /* sub header on home page */
-  .main-sub {
+  .main-sub h2 {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin: 0;
+    margin: 2%;
     padding: 0;
   }
 
@@ -453,6 +463,36 @@ input[type=submit]:hover {
   margin: 0;
 }
 
+/* Blog header media query CSS */
+.blog-logo {
+  margin-top: 5%;
+  padding: 0;
+  margin: 0;
+}
+
+.blog-list {
+  padding: 0%;
+}
+
+/* Blog images media query CSS */
+.blog-list img {
+  display: fixed;
+  justify-content: center;
+  align-items: center;
+  margin-left: 32%;
+}
+
+/* Blog h5 text */
+.blog-list h5 {
+  margin-right: 15%;
+}
+/* Blog list */ 
+
+.contact-logo h1 {
+  font-size: 220%;
+  margin-bottom: 2%;
+}
+
 /* social media links */
   .social-media {
     display: flex;
@@ -473,7 +513,7 @@ input[type=submit]:hover {
   }
 }
 
-@media (min-width:$tablet) {
+@media (min-width:$tablet) and (max-width:$laptop) {
 /* navigation bar */
   .header-nav {
     line-height: 1.5rem;
@@ -507,14 +547,16 @@ input[type=submit]:hover {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin: 0;
-    padding: 0;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
     font-size: 120%;
   }
 
-/* Main image on home page underneath headers 
+/* Main image on home page underneath headers */
   .main-image {
-    margin-top: 1%;
+    margin-top: 0%;
+    margin-left: 3%;
+    margin-bottom: 2%;
   } 
 
 /* Resume download link on about page */
@@ -542,40 +584,52 @@ input[type=submit]:hover {
 
 /* Blog header media query CSS */
   .blog-logo {
-    margin: 0;
+    margin-top: 5%;
     padding: 0;
+  }
+
+  .blog-list h5 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+  }
+
+/* Blog images media query CSS */
+  .blog-list img {
+    display: fixed;
+    align-items: center;
+    margin-left: 25%;
   }
 
 /* Blog list */ 
   .blog-list {
     justify-content: center;
-    margin-top: 0;
   }
 
-/* Bitcoin blog entry */
-  .bitcoin {
-    margin-right: 10%;
-  }
+// /* Bitcoin blog entry */
+//   .bitcoin {
+//     margin-right: 10%;
+//   }
 
-/* Blockchain blog entry */
-  .oracle {
-    margin-right: 10%;
-  }
+// /* Blockchain blog entry */
+//   .oracle {
+//     margin-right: 10%;
+//   }
 
-/* Lightning blog entry */  
-  .lightning {
-    margin-right: 10%;
-  }
+// /* Lightning blog entry */  
+//   .lightning {
+//     margin-right: 10%;
+//   }
 
-/* Ethereum blog entry */  
-  .eth {
-    margin-right: 10%;
-  }
+// /* Ethereum blog entry */  
+//   .eth {
+//     margin-right: 10%;
+//   }
 
-/* Doge blog entry */
-  .doge {
-    margin-right: 10%;
-  }
+// /* Doge blog entry */
+//   .doge {
+//     margin-right: 10%;
+//   }
 
 /* Social media links */
   .social-media {
