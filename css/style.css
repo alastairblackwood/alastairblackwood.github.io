@@ -19,9 +19,6 @@ body {
   padding: 0;
 }
 
-/* *, *::before, *::after {
-    box-sizing: inherit;
-}*/
 img {
   max-width: 100%;
   height: 100%;
@@ -343,6 +340,7 @@ p {
           justify-content: center;
 }
 
+/* Images in blogs */
 .blog-list {
   margin-top: 10%;
   margin-left: 10%;
@@ -354,6 +352,7 @@ p {
   margin-right: 10%;
 }
 
+/* Blog text */
 .blog-list p {
   text-align: center;
   border: solid;
@@ -363,6 +362,7 @@ p {
   margin-right: 10%;
 }
 
+/* Bitcoin blog */
 .bitcoin {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -551,6 +551,7 @@ input[type=submit]:hover {
   .web-menu {
     width: auto;
   }
+  /* Skills logos */
   .skills h1 {
     font-size: 200%;
     padding-top: 2%;
@@ -623,6 +624,7 @@ input[type=submit]:hover {
     display: flex;
     font-size: 250%;
   }
+  /* Copyright footer */
   .copyright {
     font-family: "Source Code Pro", monospace;
     font-size: 100%;
@@ -680,12 +682,14 @@ input[type=submit]:hover {
     margin-left: 3%;
     margin-bottom: 2%;
   }
+  /* About photo */
   .about-photo img {
     margin-bottom: 2%;
   }
   .about-text p {
     margin: 0 2%;
   }
+  /* Skills header */
   .skills h1 {
     font-size: 250%;
     padding-top: 5%;
@@ -719,6 +723,7 @@ input[type=submit]:hover {
     margin-top: 5%;
     padding: 0;
   }
+  /* Blog sub-header */
   .blog-list h5 {
     display: -webkit-box;
     display: -ms-flexbox;

@@ -1,0 +1,173 @@
+commit 0edd99847503edc94f691f4d55f233a0584851a9
+Author: alastairblackwood <agrizzlybear@icloud.com>
+Date:   Thu Apr 22 01:08:05 2021 +1000
+
+    SRI added to all pages
+
+commit 5f20b0382168083d87e531958d565b5fde33da27
+Author: alastairblackwood <agrizzlybear@icloud.com>
+Date:   Thu Apr 22 01:02:50 2021 +1000
+
+    SRI attempt
+
+commit fe4ed49feea996922d966bf63e2f77ce501bed58
+Author: alastairblackwood <agrizzlybear@icloud.com>
+Date:   Thu Apr 22 00:52:27 2021 +1000
+
+    folder rearrangement for deployment
+
+commit 89d22f236248a6020ab63eb372ad6dd1bec84303
+Author: alastairblackwood <agrizzlybear@icloud.com>
+Date:   Thu Apr 22 00:27:24 2021 +1000
+
+    second change to folder for deployment
+
+commit 63f686158e325079fa38399043a7bf02bfb55f16
+Author: alastairblackwood <agrizzlybear@icloud.com>
+Date:   Thu Apr 22 00:23:07 2021 +1000
+
+    moving html file outside folder
+
+commit dd05b6b1076d674935b334eed0f0a859127e26a1
+Author: alastairblackwood <agrizzlybear@icloud.com>
+Date:   Wed Apr 21 23:41:18 2021 +1000
+
+    subresource integrity added to site
+
+commit 7d13f58665de5ea34607c5950baa03aacc1a7daa
+Author: alastairblackwood <agrizzlybear@icloud.com>
+Date:   Wed Apr 21 23:17:55 2021 +1000
+
+    final draft of site with flex align isses solved
+
+commit e283dc83fa5f56de5289cfa8561803087def65ea
+Author: alastairblackwood <agrizzlybear@icloud.com>
+Date:   Tue Apr 20 22:54:26 2021 +1000
+
+    changes to css styling of home and blog to make display tighter
+
+commit bbb3516142572e4e6e0304d0b949209d59a7dbb7
+Author: alastairblackwood <agrizzlybear@icloud.com>
+Date:   Tue Apr 20 15:50:49 2021 +1000
+
+    changes to skills page html and css
+
+commit 2113279694687af55c040821e4370d8e57aa3a0c
+Author: alastairblackwood <agrizzlybear@icloud.com>
+Date:   Mon Apr 19 16:59:50 2021 +1000
+
+    updates to skills page
+
+commit 37e39db8329d731851034e9cdc352d3f8bbd9ce2
+Author: alastairblackwood <agrizzlybear@icloud.com>
+Date:   Mon Apr 19 11:40:49 2021 +1000
+
+    update to skills page fixing logos
+
+commit 949ff5d8a076e0c8a9c5117cb0251839d5e4a791
+Author: alastairblackwood <agrizzlybear@icloud.com>
+Date:   Mon Apr 19 10:19:26 2021 +1000
+
+    update to blog page
+
+commit 65db5037fbb59ac72ce4df1180161129099f27a6
+Author: alastairblackwood <agrizzlybear@icloud.com>
+Date:   Sun Apr 18 22:56:48 2021 +1000
+
+    change to github repo address in readme
+
+commit 4d7453350eeb2193be2656872103c19fba067ebd
+Author: alastairblackwood <agrizzlybear@icloud.com>
+Date:   Sun Apr 18 22:53:06 2021 +1000
+
+    xml sitemap file and accessibility added to code
+
+commit ccfa7db10cf9d49c41d3c2ebab824b3598b49d0f
+Author: alastairblackwood <agrizzlybear@icloud.com>
+Date:   Sat Apr 17 22:21:56 2021 +1000
+
+    completion of projects and blog text
+
+commit 3a41d377fae9d218a871908142356d5c3f21c647
+Author: alastairblackwood <agrizzlybear@icloud.com>
+Date:   Fri Apr 16 21:16:47 2021 +1000
+
+    adding of blog section content
+
+commit 30a07278632cef27e3bc20585876007d15458a20
+Author: alastairblackwood <agrizzlybear@icloud.com>
+Date:   Wed Apr 14 23:17:54 2021 +1000
+
+    skills page update
+
+commit d6a8ed0610244f218e83ae587d2dcf128c326787
+Author: alastairblackwood <agrizzlybear@icloud.com>
+Date:   Tue Apr 13 22:10:13 2021 +1000
+
+    project and contact form update
+
+commit 1f48426e3e10e024cfff4642a61c716dd6d1092c
+Author: alastairblackwood <agrizzlybear@icloud.com>
+Date:   Tue Apr 13 10:04:00 2021 +1000
+
+    mobile first design changes
+
+commit 11f423916fc786db3a8cb742b62ef1cd7e6ea53c
+Author: alastairblackwood <agrizzlybear@icloud.com>
+Date:   Sun Apr 11 22:40:03 2021 +1000
+
+    portfolio site overhaul new design
+
+commit 6f8db28ec7e137dc3be7233bf036d1017a9299f1
+Author: alastairblackwood <agrizzlybear@icloud.com>
+Date:   Sat Apr 10 22:26:58 2021 +1000
+
+    nav bar change
+
+commit 8d4f9ba5438da3a3ede6a0ee83e3e8805b03d06f
+Author: alastairblackwood <agrizzlybear@icloud.com>
+Date:   Thu Apr 8 23:27:58 2021 +1000
+
+    changes to bkgnd image and font style
+
+commit c297e581ab566d15cc8d0f599531c76e85385377
+Author: alastairblackwood <agrizzlybear@icloud.com>
+Date:   Wed Apr 7 22:53:40 2021 +1000
+
+    changes to CSS and HTML index
+
+commit 117dc7f951e8dfd7e6811e7991e1ea33118ab93a
+Author: alastairblackwood <agrizzlybear@icloud.com>
+Date:   Wed Apr 7 16:21:44 2021 +1000
+
+    social media buttons added
+
+commit ff444b67e92a67a87a7b54aaa6ca403f07e34adb
+Author: alastairblackwood <agrizzlybear@icloud.com>
+Date:   Wed Apr 7 12:05:01 2021 +1000
+
+    changes to html
+
+commit c4192321dca03804bc09100ab7266b974d7fd03d
+Author: alastairblackwood <agrizzlybear@icloud.com>
+Date:   Wed Apr 7 10:47:44 2021 +1000
+
+    updates to css html
+
+commit f9163d7beff0d2f504d5cada10f621884ac944bf
+Author: alastairblackwood <agrizzlybear@icloud.com>
+Date:   Tue Apr 6 23:04:00 2021 +1000
+
+    Portfolio_Site
+
+commit ffc4788309ff12239b5954a1a00a8d4fcd4215e3
+Author: alastairblackwood <agrizzlybear@icloud.com>
+Date:   Tue Apr 6 20:23:43 2021 +1000
+
+    Portfolio_Site
+
+commit 91a9b0ee75253187dcf29a0b8e9ab805c1a6bc9a
+Author: alastairblackwood <80987175+alastairblackwood@users.noreply.github.com>
+Date:   Tue Apr 6 12:31:46 2021 +1000
+
+    Initial commit
